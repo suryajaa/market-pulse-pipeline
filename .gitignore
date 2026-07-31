@@ -219,3 +219,7 @@ __marimo__/
 
 # Service account credentials - never commit
 credentials/
+
+.env
+
+.DS_Store
