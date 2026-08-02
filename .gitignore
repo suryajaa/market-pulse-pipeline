@@ -223,3 +223,5 @@ credentials/
 .env
 
 .DS_Store
+
+!logs/latest_run.log
