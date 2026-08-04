@@ -6,7 +6,7 @@ import pandas as pd
 
 
 def fetch_frankfurter(base="USD", symbols=None):
-    """Fetch latest currency exchange rates from Frankfurter (no auth required)."""
+    """Fetch latest currency exchange rates from Frankfurter"""
     symbols = symbols or ["EUR", "GBP", "JPY", "INR"]
     url = "https://api.frankfurter.app/latest"
     params = {"from": base, "to": ",".join(symbols)}
@@ -31,7 +31,7 @@ def fetch_frankfurter(base="USD", symbols=None):
 
 
 def fetch_coingecko(coins=None, vs_currency="usd"):
-    """Fetch current crypto prices + 24h change from CoinGecko (no auth required)."""
+    """Fetch current crypto prices + 24h change from CoinGecko"""
     coins = coins or ["bitcoin", "ethereum", "solana"]
     url = "https://api.coingecko.com/api/v3/simple/price"
     params = {
@@ -68,13 +68,7 @@ def fetch_coingecko(coins=None, vs_currency="usd"):
 
 
 def fetch_fred(series_id="DGS10", days_back=14, api_key=None):
-    """
-    Fetch recent observations for a FRED series (e.g. DGS10 = 10yr treasury yield).
-    Requires a free FRED API key.
-
-    FRED returns "." for missing / non-trading-day observations instead of a
-    number -- those rows are skipped rather than crashing float() conversion.
-    """
+    """ Fetch recent observations for a FRED series """
     api_key = api_key or os.environ.get("FRED_API_KEY")
     if not api_key:
         raise RuntimeError("FRED_API_KEY is not set.")
@@ -105,11 +99,11 @@ def fetch_fred(series_id="DGS10", days_back=14, api_key=None):
     for obs in observations:
         raw_value = obs.get("value")
         if raw_value is None or raw_value == ".":
-            continue  # missing / non-trading-day observation -- skip it
+            continue  
         try:
             value = float(raw_value)
         except ValueError:
-            continue  # unexpected non-numeric value -- skip rather than crash
+            continue  
         rows.append({
             "series_id": series_id,
             "date": obs.get("date"),
