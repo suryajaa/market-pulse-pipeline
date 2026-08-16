@@ -1,5 +1,5 @@
-Market Pulse Pipeline run: 2026-08-15T12:20:16.816029+00:00
+Market Pulse Pipeline run: 2026-08-16T12:21:39.741284+00:00
 
-[FAIL] frankfurter: APIError: [503]: The service is currently unavailable. (2026-08-15T12:20:11.642479+00:00)
-[SUCCESS] coingecko: 3 rows (2026-08-15T12:20:13.393697+00:00)
-[SUCCESS] fred: 27 rows across 3 series (2026-08-15T12:20:15.760492+00:00)
+[SUCCESS] frankfurter: 4 rows (2026-08-16T12:21:35.261016+00:00)
+[SUCCESS] coingecko: 3 rows (2026-08-16T12:21:36.496713+00:00)
+[SUCCESS] fred: 27 rows across 3 series (2026-08-16T12:21:38.677126+00:00)
