@@ -1,5 +1,5 @@
-Market Pulse Pipeline run: 2026-08-17T12:25:17.997817+00:00
+Market Pulse Pipeline run: 2026-08-18T12:27:32.001277+00:00
 
-[SUCCESS] frankfurter: 4 rows (2026-08-17T12:25:08.693442+00:00)
-[SUCCESS] coingecko: 3 rows (2026-08-17T12:25:09.613875+00:00)
-[FAIL] fred: FRED request failed for series 'DGS2': 502 Server Error: Bad Gateway for url: https://api.stlouisfed.org/fred/series/observations?series_id=DGS2&api_key=f5b59f6fb9e8086672fd243dd9060a02&file_type=json&observation_start=2026-08-03 (2026-08-17T12:25:17.226996+00:00)
+[SUCCESS] frankfurter: 4 rows (2026-08-18T12:27:28.417721+00:00)
+[SUCCESS] coingecko: 3 rows (2026-08-18T12:27:29.355817+00:00)
+[SUCCESS] fred: 27 rows across 3 series (2026-08-18T12:27:31.200694+00:00)
