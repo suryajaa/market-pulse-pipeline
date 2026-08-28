@@ -10,11 +10,6 @@ SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
 
 def get_credentials():
-    """
-    Loads Google service account credentials from the GOOGLE_SERVICE_ACCOUNT_JSON
-    env var. Same code path locally (.env) and in GitHub Actions (repo secret) —
-    no file-path branching.
-    """
     raw_json = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON")
     if not raw_json:
         raise RuntimeError("GOOGLE_SERVICE_ACCOUNT_JSON environment variable is not set.")
