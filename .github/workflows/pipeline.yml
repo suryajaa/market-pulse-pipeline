@@ -14,20 +14,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+      - name: Build Docker image
+        run: docker build -t market-pulse-pipeline .
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run pipeline
+      - name: Run pipeline in container
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           SHEET_ID: ${{ secrets.SHEET_ID }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-        run: python run_pipeline.py
+        run: |
+          docker run \
+            -e GOOGLE_SERVICE_ACCOUNT_JSON \
+            -e SHEET_ID \
+            -e FRED_API_KEY \
+            -v "$(pwd)/logs:/app/logs" \
+            market-pulse-pipeline
 
       - name: Commit run log
         run: |

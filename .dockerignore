@@ -1,0 +1,33 @@
+# --- Security: must exclude ---
+.env
+.env.*
+!.env.example
+
+# --- Version control ---
+.git
+.gitignore
+
+# --- Python runtime artifacts ---
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# --- Virtual environments (not used now, but good habit) ---
+venv/
+.venv/
+env/
+docker.env
+
+
+# --- Logs ---
+logs/
+*.log
+
+# --- CI/CD (not needed inside the image) ---
+.github/
+
+# --- Docs/misc ---
+README.md
+*.md
+
