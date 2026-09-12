@@ -1,5 +1,5 @@
-Market Pulse Pipeline run: 2026-09-11T15:36:04.840910+00:00
+Market Pulse Pipeline run: 2026-09-12T14:42:17.792172+00:00
 
-[SUCCESS] frankfurter: 4 rows (2026-09-11T15:35:58.423248+00:00)
-[SUCCESS] coingecko: 3 rows (2026-09-11T15:35:59.510123+00:00)
-[SUCCESS] fred: 24 rows across 3 series (2026-09-11T15:36:03.871343+00:00)
+[FAIL] frankfurter: Frankfurter request failed: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=10) (2026-09-12T14:42:11.856486+00:00)
+[SUCCESS] coingecko: 3 rows (2026-09-12T14:42:14.439903+00:00)
+[SUCCESS] fred: 24 rows across 3 series (2026-09-12T14:42:16.620033+00:00)
