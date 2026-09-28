@@ -1,5 +1,5 @@
-Market Pulse Pipeline run: 2026-09-27T16:05:40.735493+00:00
+Market Pulse Pipeline run: 2026-09-28T19:00:54.014923+00:00
 
-[SUCCESS] frankfurter: 4 rows (2026-09-27T16:05:37.265091+00:00)
-[SUCCESS] coingecko: 3 rows (2026-09-27T16:05:38.314711+00:00)
-[SUCCESS] fred: 27 rows across 3 series (2026-09-27T16:05:39.849949+00:00)
+[SUCCESS] frankfurter: 4 rows (2026-09-28T19:00:29.001502+00:00)
+[SUCCESS] coingecko: 3 rows (2026-09-28T19:00:30.322931+00:00)
+[FAIL] fred: FRED request failed for series 'DGS3MO': HTTPSConnectionPool(host='api.stlouisfed.org', port=443): Read timed out. (read timeout=10) (2026-09-28T19:00:53.240829+00:00)
