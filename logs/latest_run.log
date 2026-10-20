@@ -1,5 +1,5 @@
-Market Pulse Pipeline run: 2026-10-19T18:01:22.104644+00:00
+Market Pulse Pipeline run: 2026-10-20T16:05:14.168812+00:00
 
-[FAIL] frankfurter: Frankfurter request failed: HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=10) (2026-10-19T18:01:17.481282+00:00)
-[SUCCESS] coingecko: 3 rows (2026-10-19T18:01:19.326062+00:00)
-[FAIL] fred: FRED request failed for series 'DGS10': 502 Server Error: Bad Gateway for url: https://api.stlouisfed.org/fred/series/observations?series_id=DGS10&api_key=f5b59f6fb9e8086672fd243dd9060a02&file_type=json&observation_start=2026-10-05 (2026-10-19T18:01:20.761845+00:00)
+[SUCCESS] frankfurter: 4 rows (2026-10-20T16:05:05.892291+00:00)
+[SUCCESS] coingecko: 3 rows (2026-10-20T16:05:07.158771+00:00)
+[SUCCESS] fred: 24 rows across 3 series (2026-10-20T16:05:13.090653+00:00)
