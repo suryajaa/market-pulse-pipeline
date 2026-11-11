@@ -1,5 +1,5 @@
-Market Pulse Pipeline run: 2026-11-10T19:06:23.619428+00:00
+Market Pulse Pipeline run: 2026-11-11T19:03:27.396424+00:00
 
-[SUCCESS] frankfurter: 4 rows (2026-11-10T19:06:17.515404+00:00)
-[SUCCESS] coingecko: 3 rows (2026-11-10T19:06:18.597473+00:00)
-[SUCCESS] fred: 27 rows across 3 series (2026-11-10T19:06:22.611070+00:00)
+[SUCCESS] frankfurter: 4 rows (2026-11-11T19:03:22.888665+00:00)
+[SUCCESS] coingecko: 3 rows (2026-11-11T19:03:23.991930+00:00)
+[SUCCESS] fred: 27 rows across 3 series (2026-11-11T19:03:26.551314+00:00)
